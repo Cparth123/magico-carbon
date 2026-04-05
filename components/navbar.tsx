@@ -88,7 +88,7 @@ export function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={24} color={scrolled ? "#1000cc" : "#ffffff"} /> : <Menu size={24} color={scrolled ? "#1000cc" : "#ffffff"} />}
           </button>
         </div>
 

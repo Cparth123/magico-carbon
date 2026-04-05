@@ -151,7 +151,7 @@ process ensures eco-friendly practices with net zero wastage`,
     >
       {/* Hero Banner with Image Background */}
       <motion.div
-        className="relative h-96 md:h-screen bg-slate-900 overflow-hidden"
+        className="relative h-screen bg-slate-900 overflow-hidden"
         variants={fadeInUp}
       >
         <Image

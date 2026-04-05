@@ -94,7 +94,7 @@ export function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden border-t border-slate-200 py-4 space-y-3">
+          <div className="md:hidden border-t border-slate-200 py-4 bg-white rounded-md p-3 space-y-3">
             <Link
               href="#products"
               className="block text-slate-700 hover:text-[#1000cc] transition-colors font-medium py-2"

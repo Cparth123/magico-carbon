@@ -38,7 +38,7 @@ export default function RootLayout({
         <StructuredData />
         <ProductSchema />
       </head>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased" suppressHydrationWarning>
         {children}
         <Analytics />
       </body>

@@ -90,17 +90,17 @@ export function Products() {
           </p>
         </header>
 
-        <div className="space-y-16">
+        <div className="space-y-5 md:space-y-10">
           {productDetails.map((product, index) => {
             const articleClasses = [
-              'overflow-hidden rounded-[40px] border border-slate-200 shadow-lg',
+              'overflow-hidden md:rounded-[40px] rounded-2xl border border-slate-200 shadow-lg',
               index === 0 ? 'bg-gradient-to-br from-[#0c1a6f] to-[#1f1a8c] text-white' : 'bg-white text-slate-900',
             ].join(' ');
 
             return (
               <article key={product.id} className={articleClasses}>
-                <div className="grid gap-8 md:grid-cols-[1fr,1.1fr] items-center px-6 py-10">
-                  <div className="relative h-64 rounded-[30px] overflow-hidden border border-white/20 bg-slate-900/10">
+                <div className="grid gap-4 md:gap-8 md:grid-cols-[1fr,1.1fr] items-center p-4 md:p-6 ">
+                  <div className="relative h-64 rounded-2xl md:rounded-[30px] overflow-hidden border border-white/20 bg-slate-900/10">
                     <Image src={product.image} alt={product.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
                   </div>
                   <div className="space-y-4">
@@ -161,7 +161,7 @@ export function Products() {
           </div>
         </div>
 
-        <div className="bg-white rounded-[32px] border border-slate-200 shadow-md p-8 space-y-8">
+        <div className="bg-white rounded-2xl md:rounded-[32px] border border-slate-200 shadow-md p-4 md:p-6 space-y-8">
           <header className="space-y-2">
             <p className="text-xs uppercase tracking-[0.4em] text-[#1000cc]">Custom Packaging</p>
             <h3 className="text-3xl font-bold text-slate-900">Bag Quality, Printing & Shipment</h3>

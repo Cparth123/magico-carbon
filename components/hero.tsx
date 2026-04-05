@@ -151,7 +151,7 @@ process ensures eco-friendly practices with net zero wastage`,
     >
       {/* Hero Banner with Image Background */}
       <motion.div
-        className="relative h-screen bg-slate-900 overflow-hidden"
+        className="relative min-h-max md:h-screen bg-slate-900 overflow-hidden"
         variants={fadeInUp}
       >
         <Image
@@ -170,7 +170,7 @@ process ensures eco-friendly practices with net zero wastage`,
           className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8"
           variants={fadeInUp}
         >
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mb-20 mt-[200px] md:mb-0 md:mt-0 mx-auto">
             {/* Headline */}
             <motion.h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-2 leading-tight">
               WORLD&apos;S FINEST
@@ -414,22 +414,22 @@ process ensures eco-friendly practices with net zero wastage`,
         variants={fadeInUp}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h3 className="text-center text-2xl md:text-3xl font-bold text-slate-900 mb-10">
+          <h3 className="text-center text-2xl md:text-3xl font-bold text-slate-900 mb-5 md:mb-10">
             APPLICATIONS
           </h3>
-          <p className="text-center text-slate-600 max-w-3xl mx-auto">
+          <p className="text-center text-slate-600 max-w-3xl mx-auto mb-10">
             Discover the Endless Possibilities with Magico Carbon
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 auto-rows-[200px] gap-4">
             {industries.map((industry, idx) => {
               // custom layout pattern for 7 items
               const layoutClasses = [
-                "col-span-2 row-span-1", // 1 (top-left big)
-                "col-span-2 row-span-1", // 2 (top-right)
-                "col-span-1 row-span-1", // 3
+                "col-span-3 md:col-span-2 row-span-1", // 1 (top-left big)
+                "col-span-3 md:col-span-2 row-span-1", // 2 (top-right)
+                "col-span-3 md:col-span-1 row-span-1", // 3
                 "col-span-1 row-span-1", // 4
                 "col-span-2 row-span-1", // 5 (middle right wide)
-                "col-span-1 row-span-1", // 6
+                "col-span-3 md:col-span-1 row-span-1", // 6
                 "col-span-3 row-span-1", // 7 (bottom wide)
               ];
 

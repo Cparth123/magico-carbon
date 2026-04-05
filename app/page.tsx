@@ -24,7 +24,7 @@ const pageVariant = {
 
 export default function Home() {
   return (
-    <div suppressHydrationWarning>
+    <div>
       <main>
         <Navbar />
         <Hero />

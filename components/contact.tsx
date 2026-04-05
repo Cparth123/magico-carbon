@@ -68,15 +68,15 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-28 bg-white">
+    <section id="contact" className="py-5 md:py-10 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-5 md:mb-10">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             CONTACT US
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
+        <div className="grid md:grid-cols-2 gap-5 md:gap-10 mb-5 md:mb-10">
           <div className="bg-slate-50 rounded-2xl border border-slate-200 p-8 md:p-10">
             <h3 className="text-2xl font-bold text-slate-900 mb-6">
               Request a Quote
